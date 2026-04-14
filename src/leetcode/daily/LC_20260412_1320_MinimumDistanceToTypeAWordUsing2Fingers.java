@@ -63,6 +63,26 @@ public class LC_20260412_1320_MinimumDistanceToTypeAWordUsing2Fingers {
         return ans;
     }
 
+    public int  minimumDistance_tabulation(String word){
+        n = word.length();
+        int[][][] dp = new int[n+1][27][27];
+        int INF = (int)1e9;
+        for(int i = 0; i < n+1; i++){
+            for(int j = 0; j < 27; j++)
+                Arrays.fill(dp[i][j], INF);
+        }
+        for(int i = 0; i < 27; i++){
+            for(int j = 0; j < 27; j++)
+                dp[0][i][j] = 0;
+        }
+
+        for(int i = 0; i < n; i++){
+
+        }
+
+        return -1;
+    }
+
     public int minimumDistanceRec(String word) {
         n = word.length();
         int[][][] mem = new int[n][27][27];
