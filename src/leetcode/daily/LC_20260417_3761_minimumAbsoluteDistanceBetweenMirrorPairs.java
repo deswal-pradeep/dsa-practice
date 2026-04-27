@@ -3,10 +3,10 @@ package leetcode.daily;
 import java.util.HashMap;
 import java.util.Map;
 
-public class LC_20260517_3761_minimumAbsoluteDistanceBetweenMirrorPairs {
+public class LC_20260417_3761_minimumAbsoluteDistanceBetweenMirrorPairs {
     //https://leetcode.com/problems/minimum-absolute-distance-between-mirror-pairs/?envType=daily-question&envId=2026-04-17
     static void main() {
-        int ans  = new LC_20260517_3761_minimumAbsoluteDistanceBetweenMirrorPairs().minMirrorPairDistance(new int[]{120,21});
+        int ans  = new LC_20260417_3761_minimumAbsoluteDistanceBetweenMirrorPairs().minMirrorPairDistance(new int[]{120,21});
         System.out.println(ans);
     }
     public int minMirrorPairDistance(int[] nums) {
