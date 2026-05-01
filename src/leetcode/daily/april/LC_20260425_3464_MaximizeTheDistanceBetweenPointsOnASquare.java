@@ -1,6 +1,5 @@
-package leetcode.daily;
+package leetcode.daily.april;
 
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

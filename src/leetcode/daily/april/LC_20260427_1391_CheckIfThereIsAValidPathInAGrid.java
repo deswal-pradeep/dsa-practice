@@ -1,4 +1,4 @@
-package leetcode.daily;
+package leetcode.daily.april;
 
 //https://leetcode.com/problems/check-if-there-is-a-valid-path-in-a-grid/?envType=daily-question&envId=2026-04-27
 public class LC_20260427_1391_CheckIfThereIsAValidPathInAGrid {

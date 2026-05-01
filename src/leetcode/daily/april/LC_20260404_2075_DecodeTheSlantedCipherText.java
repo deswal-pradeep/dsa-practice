@@ -1,4 +1,4 @@
-package leetcode.daily;
+package leetcode.daily.april;
 
 public class LC_20260404_2075_DecodeTheSlantedCipherText {
     //https://leetcode.com/problems/decode-the-slanted-ciphertext/?envType=daily-question&envId=2026-04-04

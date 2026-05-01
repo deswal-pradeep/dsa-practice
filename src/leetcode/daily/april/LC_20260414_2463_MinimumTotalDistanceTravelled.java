@@ -1,4 +1,4 @@
-package leetcode.daily;
+package leetcode.daily.april;
 
 import java.util.ArrayList;
 import java.util.Arrays;

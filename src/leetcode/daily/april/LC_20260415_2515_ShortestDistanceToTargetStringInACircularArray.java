@@ -1,4 +1,4 @@
-package leetcode.daily;
+package leetcode.daily.april;
 
 public class LC_20260415_2515_ShortestDistanceToTargetStringInACircularArray {
     //https://leetcode.com/problems/shortest-distance-to-target-string-in-a-circular-array/?envType=daily-question&envId=2026-04-15

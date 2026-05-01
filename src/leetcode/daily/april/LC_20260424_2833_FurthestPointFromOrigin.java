@@ -1,4 +1,4 @@
-package leetcode.daily;
+package leetcode.daily.april;
 
 //https://leetcode.com/problems/furthest-point-from-origin/?envType=daily-question&envId=2026-04-24
 public class LC_20260424_2833_FurthestPointFromOrigin {

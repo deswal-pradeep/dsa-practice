@@ -1,4 +1,4 @@
-package leetcode.daily;
+package leetcode.daily.april;
 
 public class LC_20260405_801_MinimumSwapsToMakeSequenceIncreasing {
     int n;

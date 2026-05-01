@@ -1,4 +1,4 @@
-package leetcode.daily;
+package leetcode.daily.april;
 
 class LC_20260405_657_RobotReturnToOrigin {
     static void main() {

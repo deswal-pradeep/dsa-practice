@@ -1,8 +1,6 @@
-package leetcode.daily;
+package leetcode.daily.april;
 
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
 public class LC_20260412_1320_MinimumDistanceToTypeAWordUsing2Fingers {
     static void main() {
