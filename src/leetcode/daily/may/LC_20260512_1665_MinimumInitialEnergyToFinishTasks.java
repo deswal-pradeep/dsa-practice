@@ -5,6 +5,15 @@ import java.util.Arrays;
 //https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks/description/?envType=daily-question&envId=2026-05-12
 public class LC_20260512_1665_MinimumInitialEnergyToFinishTasks {
     public int minimumEffort(int[][] tasks) {
+        Arrays.sort(tasks, (a, b) -> a[1] - a[0] - (b[1] - b[0]));
+        int ans = 0;
+        for (int[] task : tasks) {
+            ans = Math.max(ans + task[0], task[1]);
+        }
+        return ans;
+    }
+
+    public int minimumEffort_1(int[][] tasks) {
         Arrays.sort(tasks, (a, b) -> {return (b[1]-b[0]) - (a[1]-a[0]);});
         int left = 1;
         int right = 0;
@@ -30,7 +39,6 @@ public class LC_20260512_1665_MinimumInitialEnergyToFinishTasks {
     boolean isPossible(int[][] tasks, int val){
         for(int i = 0; i < tasks.length; i++){
             if(val < tasks[i][1]){
-                //System.out.println("false");
                 return false;
             }
             val = val - tasks[i][0];
