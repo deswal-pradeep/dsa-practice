@@ -17,19 +17,23 @@ public class LC_20260518_1345_JumpGameIV {
             int[] node = queue.poll();
             int index = node[0];
             int steps = node[1];
-            visited[index] = true;
             if(index == arr.length-1)
                 return node[1];
             List<Integer> list = map.get(arr[index]);
             for(int idx : list){
-                if(idx != index && !visited[idx])
+                if(idx != index && !visited[idx]){
+                    visited[idx] = true;
                     queue.add(new int[]{idx, steps+1});
+                }
+
             }
             list.clear();
             if(index+1 < arr.length && !visited[index+1]){
+                visited[index+1] = true;
                 queue.add(new int[]{index+1, steps+1});
             }
             if(index-1 > 0 && !visited[index-1]){
+                visited[index-1] = true;
                 queue.add(new int[]{index-1, steps+1});
             }
         }
