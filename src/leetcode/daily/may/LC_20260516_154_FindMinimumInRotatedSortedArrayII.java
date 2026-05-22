@@ -1,7 +1,7 @@
 package leetcode.daily.may;
 
 //https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/description/?envType=daily-question&envId=2026-05-16
-public class LC_20250516_154_FindMinimumInRotatedSortedArrayII {
+public class LC_20260516_154_FindMinimumInRotatedSortedArrayII {
     public int findMin(int[] nums) {
         int low = 0;
         int high = nums.length-1;
@@ -26,7 +26,7 @@ public class LC_20250516_154_FindMinimumInRotatedSortedArrayII {
     }
 
     static void main() {
-        int min = new LC_20250516_154_FindMinimumInRotatedSortedArrayII()
+        int min = new LC_20260516_154_FindMinimumInRotatedSortedArrayII()
                 .findMin(new int[]{2, 2, 2, 0, 1});
         System.out.println(min);
     }
