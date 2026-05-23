@@ -1,5 +1,7 @@
 package leetcode.daily.may;
 
+import java.util.Arrays;
+
 //https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/description/?envType=daily-question&envId=2026-05-21
 public class LC_20260521_3043_FindTheLengthOfTheLongestCommonPrefix {
     public int longestCommonPrefix(int[] arr1, int[] arr2) {
