@@ -1,7 +1,7 @@
 package leetcode.daily.y2026.may;
 
 public class LC_20260505_61_RotateList {
-    static public class ListNode {
+    private static class ListNode {
         int val;
         ListNode next;
         ListNode() {}

@@ -4,7 +4,7 @@ import java.util.Stack;
 
 //https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/?envType=daily-question&envId=2026-06-14
 public class LC_20260614_2130_MaximumTwinSumOfALinkedList {
-    static class ListNode {
+    private static class ListNode {
         int val;
         ListNode next;
         ListNode(int val) {
