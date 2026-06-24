@@ -1,5 +1,6 @@
 package leetcode.daily.y2026.jun;
 
+//https://leetcode.com/problems/number-of-zigzag-arrays-ii/description/?envType=daily-question&envId=2026-06-24
 public class LC_20260624_3700_NumberOfZigZagArraysII {
     static int MOD = 1_000_000_007;
     long[][] power(long[][] base, long exp) {
