@@ -1,5 +1,6 @@
 package leetcode.daily.y2026.jun;
 
+//https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/description/?envType=daily-question&envId=2026-06-30
 public class LC_20260630_1358_NumberOfSubstringsContainingAllThreeCharacters {
     public int numberOfSubstrings(String s) {
         long cnt = 0;
