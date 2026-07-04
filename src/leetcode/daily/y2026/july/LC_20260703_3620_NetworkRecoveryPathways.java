@@ -154,7 +154,7 @@ public class LC_20260703_3620_NetworkRecoveryPathways {
     }
 
     class Solution {
-        
+
         public int findMaxPathScore(int[][] edges, boolean[] online, long k) {
             int n = online.length;
             List<int[]>[] g = new ArrayList[n];
