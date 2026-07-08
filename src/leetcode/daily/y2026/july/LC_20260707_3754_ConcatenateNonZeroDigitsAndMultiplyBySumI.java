@@ -2,6 +2,7 @@ package leetcode.daily.y2026.july;
 
 import java.util.Stack;
 
+//https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-i/submissions/2058795100/?envType=daily-question&envId=2026-07-07
 public class LC_20260707_3754_ConcatenateNonZeroDigitsAndMultiplyBySumI {
     public long sumAndMultiply(int n) {
         int val = 0;
