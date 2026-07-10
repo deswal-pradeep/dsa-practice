@@ -5,12 +5,12 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class LC_20260414_2463_MinimumTotalDistanceTravelled {
+public class LC_14_2463_MinimumTotalDistanceTravelled {
     //https://leetcode.com/problems/minimum-total-distance-traveled/?envType=daily-question&envId=2026-04-14
     static void main() {
         List<Integer> robots = Arrays.asList(0,4,6);
         int[][] factories = {{2,2}, {6,2}};
-        long ans = new LC_20260414_2463_MinimumTotalDistanceTravelled().minimumTotalDistance(null, null);
+        long ans = new LC_14_2463_MinimumTotalDistanceTravelled().minimumTotalDistance(null, null);
         System.out.println(ans);
     }
     int rLength;

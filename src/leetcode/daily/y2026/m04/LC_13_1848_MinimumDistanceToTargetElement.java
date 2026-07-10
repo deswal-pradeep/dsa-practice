@@ -1,8 +1,8 @@
 package leetcode.daily.y2026.m04;
 
-public class LC_20260413_1848_MinimumDistanceToTargetElement {
+public class LC_13_1848_MinimumDistanceToTargetElement {
     static void main() {
-        new LC_20260413_1848_MinimumDistanceToTargetElement().getMinDistance(new int[] {1,1,1,1,1,1,1,1,1,1}, 1, 0);
+        new LC_13_1848_MinimumDistanceToTargetElement().getMinDistance(new int[] {1,1,1,1,1,1,1,1,1,1}, 1, 0);
     }
 
     public int getMinDistance(int[] nums, int target, int start) {

@@ -3,7 +3,7 @@ package leetcode.daily.y2026.m06;
 import java.util.Arrays;
 
 //https://leetcode.com/problems/total-waviness-of-numbers-in-range-ii/?envType=daily-question&envId=2026-06-05
-public class LC_20260605_3753_TotalWavinessOfNumbersInRangeII {
+public class LC_05_3753_TotalWavinessOfNumbersInRangeII {
     //https://leetcode.com/problems/total-waviness-of-numbers-in-range-ii/?envType=daily-question&envId=2026-06-05
     String s;
     int n;
@@ -74,8 +74,8 @@ public class LC_20260605_3753_TotalWavinessOfNumbersInRangeII {
     }
 
     static void main() {
-        long l = new LC_20260605_3753_TotalWavinessOfNumbersInRangeII().totalWaviness(4848L, 10000L);
-        //long l = new LC_20260605_3753_TotalWavinessOfNumbersInRangeII().totalWaviness(120L, 130L);
+        long l = new LC_05_3753_TotalWavinessOfNumbersInRangeII().totalWaviness(4848L, 10000L);
+        //long l = new LC_05_3753_TotalWavinessOfNumbersInRangeII().totalWaviness(120L, 130L);
         System.out.println(l);
     }
 }

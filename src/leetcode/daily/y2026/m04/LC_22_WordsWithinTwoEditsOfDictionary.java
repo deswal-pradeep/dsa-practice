@@ -3,9 +3,9 @@ package leetcode.daily.y2026.m04;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LC_20260422_WordsWithinTwoEditsOfDictionary {
+public class LC_22_WordsWithinTwoEditsOfDictionary {
     static void main() {
-        new LC_20260422_WordsWithinTwoEditsOfDictionary()
+        new LC_22_WordsWithinTwoEditsOfDictionary()
                 .twoEditWords(new String[]{"word","note","ants","wood"}, new String[]{"wood","joke","moat"});
     }
     public List<String> twoEditWords(String[] queries, String[] dictionary) {

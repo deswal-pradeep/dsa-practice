@@ -2,12 +2,12 @@ package leetcode.daily.y2026.m04;
 
 import java.util.*;
 
-public class LC_20260421_1722_MinimumHammingDistanceAfterSwapOperations {
+public class LC_21_1722_MinimumHammingDistanceAfterSwapOperations {
     static void main() {
         int[] source = {71,13,6,60,22,31};
         int[] target = {66,57,2,60,22,73};
         int[][] allowedSwaps = {{4,5},{0,4}};
-        int ans = new LC_20260421_1722_MinimumHammingDistanceAfterSwapOperations()
+        int ans = new LC_21_1722_MinimumHammingDistanceAfterSwapOperations()
                 .minimumHammingDistance(source, target, allowedSwaps);
         System.out.println(ans);
     }

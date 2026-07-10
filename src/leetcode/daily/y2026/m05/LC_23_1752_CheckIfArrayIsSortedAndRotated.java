@@ -1,7 +1,7 @@
 package leetcode.daily.y2026.m05;
 
 //https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/?envType=daily-question&envId=2026-05-23
-public class LC_20260523_1752_CheckIfArrayIsSortedAndRotated {
+public class LC_23_1752_CheckIfArrayIsSortedAndRotated {
     public boolean check(int[] nums){
         int n = nums.length;
         if(n <= 1) return true;
@@ -36,7 +36,7 @@ public class LC_20260523_1752_CheckIfArrayIsSortedAndRotated {
     }
 
     static void main() {
-        boolean check = new LC_20260523_1752_CheckIfArrayIsSortedAndRotated()
+        boolean check = new LC_23_1752_CheckIfArrayIsSortedAndRotated()
                 .check(new int[]{3, 4, 5, 1, 2});
         System.out.println(check);
     }

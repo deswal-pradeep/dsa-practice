@@ -1,6 +1,6 @@
 package leetcode.daily.y2026.m06;
 
-public class LC_20260629_1967_NumberOfStringsThatAppearAsSubstringsInWord {
+public class LC_29_1967_NumberOfStringsThatAppearAsSubstringsInWord {
     public int numOfStrings(String[] patterns, String word) {
         int ans = 0;
         for(String p : patterns){
@@ -11,7 +11,7 @@ public class LC_20260629_1967_NumberOfStringsThatAppearAsSubstringsInWord {
     }
 
     static void main() {
-        int ans = new LC_20260629_1967_NumberOfStringsThatAppearAsSubstringsInWord()
+        int ans = new LC_29_1967_NumberOfStringsThatAppearAsSubstringsInWord()
                 .numOfStrings(new String[]{"a", "abc", "bc", "d"}, "abc");
         System.out.println(ans);
     }

@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 //https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/description/?envType=daily-question&envId=2026-05-08
-public class LC_20260508_3629_MinimumJumpsToReachEndViaPrimeTeleportation {
+public class LC_08_3629_MinimumJumpsToReachEndViaPrimeTeleportation {
     private static final int MX = 1000001;
     private static final List<Integer>[] factors = new ArrayList[MX];
 

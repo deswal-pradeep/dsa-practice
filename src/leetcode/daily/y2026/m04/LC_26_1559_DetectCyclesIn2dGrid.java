@@ -1,6 +1,6 @@
 package leetcode.daily.y2026.m04;
 
-public class LC_20260426_1559_DetectCyclesIn2dGrid {
+public class LC_26_1559_DetectCyclesIn2dGrid {
     int m;
     int n;
     public boolean containsCycle(char[][] grid){
@@ -86,6 +86,6 @@ public class LC_20260426_1559_DetectCyclesIn2dGrid {
 
     static void main() {
         char[][] grid = {{'c','c','c','a'},{'c','d','c','c'},{'c','c','e','c'},{'f','c','c','c'}};
-        new LC_20260426_1559_DetectCyclesIn2dGrid().containsCycle(grid);
+        new LC_26_1559_DetectCyclesIn2dGrid().containsCycle(grid);
     }
 }

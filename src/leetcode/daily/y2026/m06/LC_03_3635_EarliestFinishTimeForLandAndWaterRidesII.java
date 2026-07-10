@@ -1,6 +1,6 @@
 package leetcode.daily.y2026.m06;
 
-public class LC_20260603_3635_EarliestFinishTimeForLandAndWaterRidesII {
+public class LC_03_3635_EarliestFinishTimeForLandAndWaterRidesII {
     public int earliestFinishTime(int[] landStartTime, int[] landDuration, int[] waterStartTime, int[] waterDuration) {
         //there are 2 picks, first pick can be from both, pick1 should be as soon as possible
         int landFirst = Integer.MAX_VALUE;
@@ -30,7 +30,7 @@ public class LC_20260603_3635_EarliestFinishTimeForLandAndWaterRidesII {
     }
 
     static void main() {
-        int ans = new LC_20260603_3635_EarliestFinishTimeForLandAndWaterRidesII()
+        int ans = new LC_03_3635_EarliestFinishTimeForLandAndWaterRidesII()
                 .earliestFinishTime(
                         new int[]{2,8}, new int[]{4,1},
                         new int[]{6}, new int[]{3});

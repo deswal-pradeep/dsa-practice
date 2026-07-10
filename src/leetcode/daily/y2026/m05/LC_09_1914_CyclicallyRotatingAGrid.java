@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 //https://leetcode.com/problems/cyclically-rotating-a-grid/?envType=daily-question&envId=2026-05-09
-public class LC_20260509_1914_CyclicallyRotatingAGrid {
+public class LC_09_1914_CyclicallyRotatingAGrid {
     public int[][] rotateGrid(int[][] grid, int k) {
         int m = grid.length;
         int n = grid[0].length;
@@ -50,6 +50,6 @@ public class LC_20260509_1914_CyclicallyRotatingAGrid {
 
     static void main() {
         int[][] grid = {{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};
-        int[][] ans = new LC_20260509_1914_CyclicallyRotatingAGrid().rotateGrid(grid, 2);
+        int[][] ans = new LC_09_1914_CyclicallyRotatingAGrid().rotateGrid(grid, 2);
     }
 }

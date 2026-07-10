@@ -1,6 +1,6 @@
 package leetcode.daily.y2026.m06;
 
-public class LC_20260623_3699_NumberOfZigZagArraysI {
+public class LC_23_3699_NumberOfZigZagArraysI {
     int n, l , r;
     int MOD = 1_000_000_007;
 
@@ -64,7 +64,7 @@ public class LC_20260623_3699_NumberOfZigZagArraysI {
     }
 
     static void main() {
-        int ans = new LC_20260623_3699_NumberOfZigZagArraysI()
+        int ans = new LC_23_3699_NumberOfZigZagArraysI()
                 .zigZagArrays(4, 1, 3);
         System.out.println(ans);
     }

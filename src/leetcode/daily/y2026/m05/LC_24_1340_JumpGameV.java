@@ -3,7 +3,7 @@ package leetcode.daily.y2026.m05;
 import java.util.Arrays;
 
 //https://leetcode.com/problems/jump-game-v/?envType=daily-question&envId=2026-05-24
-public class LC_20260524_1340_JumpGameV {
+public class LC_24_1340_JumpGameV {
     int n;
     public int maxJumps(int[] arr, int d) {
         n = arr.length;
@@ -41,7 +41,7 @@ public class LC_20260524_1340_JumpGameV {
     }
 
     static void main() {
-        int ans = new LC_20260524_1340_JumpGameV()
+        int ans = new LC_24_1340_JumpGameV()
                 .maxJumps(new int[]{6, 4, 14, 6, 8, 13, 9, 7, 10, 6, 12}, 2);
         System.out.println(ans);
     }

@@ -3,7 +3,7 @@ package leetcode.daily.y2026.m06;
 import java.util.Stack;
 
 //https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/?envType=daily-question&envId=2026-06-14
-public class LC_20260614_2130_MaximumTwinSumOfALinkedList {
+public class LC_14_2130_MaximumTwinSumOfALinkedList {
     private static class ListNode {
         int val;
         ListNode next;
@@ -72,7 +72,7 @@ public class LC_20260614_2130_MaximumTwinSumOfALinkedList {
         node2.next = node3;
         node3.next = node4;
 
-        int ans = new LC_20260614_2130_MaximumTwinSumOfALinkedList()
+        int ans = new LC_14_2130_MaximumTwinSumOfALinkedList()
                 .pairSum(node1);
         System.out.println(ans);
     }

@@ -1,6 +1,6 @@
 package leetcode.daily.y2026.m06;
 
-public class LC_20260617_3614_ProcessStringWithSpecialOperationsII {
+public class LC_17_3614_ProcessStringWithSpecialOperationsII {
     public char processStr(String s, long k) {
         long len = 0;
         char[] arr = s.toCharArray();
@@ -40,9 +40,9 @@ public class LC_20260617_3614_ProcessStringWithSpecialOperationsII {
     }
 
     static void main() {
-        /*char ans = new LC_20260617_3614_ProcessStringWithSpecialOperationsII()
+        /*char ans = new LC_17_3614_ProcessStringWithSpecialOperationsII()
                 .processStr("%edx#n#lkc####uom##qg#%#b#ek%##%%ocr#m%#fv%i%%#n#u%%#n#q%v#rwvd##t###%#%%%o*##r#gr*gz#dm%ez", 4780);*/
-        char ans = new LC_20260617_3614_ProcessStringWithSpecialOperationsII()
+        char ans = new LC_17_3614_ProcessStringWithSpecialOperationsII()
                 .processStr("cd%#*#", 3);
         System.out.println(ans);
 

@@ -2,7 +2,7 @@ package leetcode.daily.y2026.m06;
 
 import java.util.*;
 
-public class LC_20260612_3559_NumberOfWaysToAssignEdgeWeightsII {
+public class LC_12_3559_NumberOfWaysToAssignEdgeWeightsII {
     static class LCA {
 
         private int n;
@@ -112,7 +112,7 @@ public class LC_20260612_3559_NumberOfWaysToAssignEdgeWeightsII {
         int[][] edges = new int[][]{{1,2},{1,3},{3,4},{3,5}};
         int[][] q = new int[][]{{1,4},{3,4},{2,5}};
         //int[][] q = new int[][]{{2,5}};
-        int[] ans = new LC_20260612_3559_NumberOfWaysToAssignEdgeWeightsII()
+        int[] ans = new LC_12_3559_NumberOfWaysToAssignEdgeWeightsII()
                 .assignEdgeWeights(edges, q);
         System.out.println(Arrays.toString(ans));
     }

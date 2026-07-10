@@ -2,7 +2,7 @@ package leetcode.daily.y2026.m06;
 
 import java.util.*;
 
-public class LC_20260620_1840_MaximumBuildingHeight {
+public class LC_20_1840_MaximumBuildingHeight {
     static class Node {
         int index;
         int height;
@@ -136,7 +136,7 @@ public class LC_20260620_1840_MaximumBuildingHeight {
 
     static void main() {
         int[][] res = new int[][]{{5,3},{2,5},{7,4},{10,3}};
-        int ans = new LC_20260620_1840_MaximumBuildingHeight().maxBuilding(10, res);
+        int ans = new LC_20_1840_MaximumBuildingHeight().maxBuilding(10, res);
         System.out.println(ans);
     }
 }

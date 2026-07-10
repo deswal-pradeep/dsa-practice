@@ -1,9 +1,9 @@
 package leetcode.daily.y2026.m04;
 
-public class LC_20260404_2075_DecodeTheSlantedCipherText {
+public class LC_04_2075_DecodeTheSlantedCipherText {
     //https://leetcode.com/problems/decode-the-slanted-ciphertext/?envType=daily-question&envId=2026-04-04
     static void main() {
-        System.out.println(new LC_20260404_2075_DecodeTheSlantedCipherText().decodeCiphertext("ch   ie   pr", 3));
+        System.out.println(new LC_04_2075_DecodeTheSlantedCipherText().decodeCiphertext("ch   ie   pr", 3));
     }
     public String decodeCiphertext(String encodedText, int rows) {
         int m = rows;

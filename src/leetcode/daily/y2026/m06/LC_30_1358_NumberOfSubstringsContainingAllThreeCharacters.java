@@ -1,7 +1,7 @@
 package leetcode.daily.y2026.m06;
 
 //https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/description/?envType=daily-question&envId=2026-06-30
-public class LC_20260630_1358_NumberOfSubstringsContainingAllThreeCharacters {
+public class LC_30_1358_NumberOfSubstringsContainingAllThreeCharacters {
     public int numberOfSubstrings(String s) {
         long cnt = 0;
         int[] f = new int[3];
@@ -27,6 +27,6 @@ public class LC_20260630_1358_NumberOfSubstringsContainingAllThreeCharacters {
     }
 
     static void main() {
-        new LC_20260630_1358_NumberOfSubstringsContainingAllThreeCharacters().numberOfSubstrings("aaacb");
+        new LC_30_1358_NumberOfSubstringsContainingAllThreeCharacters().numberOfSubstrings("aaacb");
     }
 }

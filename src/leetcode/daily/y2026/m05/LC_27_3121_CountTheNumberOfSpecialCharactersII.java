@@ -3,7 +3,7 @@ package leetcode.daily.y2026.m05;
 import java.util.Arrays;
 
 //https://leetcode.com/problems/count-the-number-of-special-characters-ii/description/?envType=daily-question&envId=2026-05-27
-public class LC_20260527_3121_CountTheNumberOfSpecialCharactersII {
+public class LC_27_3121_CountTheNumberOfSpecialCharactersII {
     public int numberOfSpecialChars(String word) {
         char[] arr = word.toCharArray();
         int[] sMap = new int[26];
@@ -29,7 +29,7 @@ public class LC_20260527_3121_CountTheNumberOfSpecialCharactersII {
     }
 
     static void main() {
-        int ans = new LC_20260527_3121_CountTheNumberOfSpecialCharactersII()
+        int ans = new LC_27_3121_CountTheNumberOfSpecialCharactersII()
                 .numberOfSpecialChars("AbBCab");
         System.out.println(ans);
     }

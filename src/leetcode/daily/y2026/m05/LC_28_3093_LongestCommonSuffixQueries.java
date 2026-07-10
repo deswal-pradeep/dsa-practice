@@ -3,7 +3,7 @@ package leetcode.daily.y2026.m05;
 import java.util.Arrays;
 
 //https://leetcode.com/problems/longest-common-suffix-queries/?envType=daily-question&envId=2026-05-28
-public class LC_20260528_3093_LongestCommonSuffixQueries {
+public class LC_28_3093_LongestCommonSuffixQueries {
     static class TrieNode {
         TrieNode[] children = new TrieNode[26];
         boolean isEnd = false;
@@ -55,7 +55,7 @@ public class LC_20260528_3093_LongestCommonSuffixQueries {
     }
 
     static void main() {
-        int[] ans = new LC_20260528_3093_LongestCommonSuffixQueries()
+        int[] ans = new LC_28_3093_LongestCommonSuffixQueries()
                 .stringIndices(new String[]{"abcd","bcd","xbcd"},
                         new String[]{"cd","bcd","xyz"});
         System.out.println(Arrays.toString(ans));

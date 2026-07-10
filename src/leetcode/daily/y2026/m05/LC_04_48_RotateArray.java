@@ -2,10 +2,10 @@ package leetcode.daily.y2026.m05;
 
 import java.util.Arrays;
 
-public class LC_20260504_48_RotateArray {
+public class LC_04_48_RotateArray {
     static void main() {
         int[][] mat = {{1,2,3},{4,5,6},{7,8,9}};
-        new LC_20260504_48_RotateArray().rotate(mat);
+        new LC_04_48_RotateArray().rotate(mat);
         for(int i = 0; i < mat.length; i++){
             System.out.println(Arrays.toString(mat[i]));
         }

@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 
-public class LC_20260520_2657_FindThePrefixCommonArrayOfTwoArrays {
+public class LC_20_2657_FindThePrefixCommonArrayOfTwoArrays {
     public int[] findThePrefixCommonArray(int[] A, int[] B) {
         int[] ans = new int[A.length];
         HashSet<Integer> set = new HashSet<>();
@@ -42,7 +42,7 @@ public class LC_20260520_2657_FindThePrefixCommonArrayOfTwoArrays {
     }
 
     static void main() {
-        int[] ans = new LC_20260520_2657_FindThePrefixCommonArrayOfTwoArrays()
+        int[] ans = new LC_20_2657_FindThePrefixCommonArrayOfTwoArrays()
                 .findThePrefixCommonArray(
                         new int[]{1,3,2,4},
                         new int[]{3,1,2,4});

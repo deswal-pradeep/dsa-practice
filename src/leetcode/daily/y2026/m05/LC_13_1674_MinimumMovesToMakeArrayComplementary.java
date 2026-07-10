@@ -1,7 +1,7 @@
 package leetcode.daily.y2026.m05;
 
 //https://leetcode.com/problems/minimum-moves-to-make-array-complementary/?envType=daily-question&envId=2026-05-13
-public class LC_20260513_1674_MinimumMovesToMakeArrayComplementary {
+public class LC_13_1674_MinimumMovesToMakeArrayComplementary {
     public int minMoves(int[] nums, int limit) {
         int n = nums.length;
         int[] diff = new int[2 * limit + 2];
@@ -25,7 +25,7 @@ public class LC_20260513_1674_MinimumMovesToMakeArrayComplementary {
     }
 
     static void main() {
-        int ans = new LC_20260513_1674_MinimumMovesToMakeArrayComplementary()
+        int ans = new LC_13_1674_MinimumMovesToMakeArrayComplementary()
                 .minMoves(new int[]{1, 2, 4, 3}, 4);
         System.out.println(ans);
     }

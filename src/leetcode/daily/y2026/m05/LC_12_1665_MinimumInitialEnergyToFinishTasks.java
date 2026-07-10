@@ -3,7 +3,7 @@ package leetcode.daily.y2026.m05;
 import java.util.Arrays;
 
 //https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks/description/?envType=daily-question&envId=2026-05-12
-public class LC_20260512_1665_MinimumInitialEnergyToFinishTasks {
+public class LC_12_1665_MinimumInitialEnergyToFinishTasks {
     public int minimumEffort(int[][] tasks) {
         Arrays.sort(tasks, (a, b) -> a[1] - a[0] - (b[1] - b[0]));
         int ans = 0;
@@ -48,7 +48,7 @@ public class LC_20260512_1665_MinimumInitialEnergyToFinishTasks {
 
     static void main() {
         int[][] tasks = {{1,3},{2,4},{10,11},{10,12},{8,9}};
-        int ans = new LC_20260512_1665_MinimumInitialEnergyToFinishTasks().minimumEffort(tasks);
+        int ans = new LC_12_1665_MinimumInitialEnergyToFinishTasks().minimumEffort(tasks);
         System.out.println(ans);
     }
 }

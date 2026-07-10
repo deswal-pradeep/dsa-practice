@@ -1,7 +1,7 @@
 package leetcode.daily.y2026.m04;
 
 //https://leetcode.com/problems/check-if-there-is-a-valid-path-in-a-grid/?envType=daily-question&envId=2026-04-27
-public class LC_20260427_1391_CheckIfThereIsAValidPathInAGrid {
+public class LC_27_1391_CheckIfThereIsAValidPathInAGrid {
     int m, n;
     int[] left = {0, -1};
     int[] right = {0, 1};
@@ -61,7 +61,7 @@ public class LC_20260427_1391_CheckIfThereIsAValidPathInAGrid {
 
     static void main() {
         int[][] grid = {{4, 1}, {6, 1}};
-        boolean ans = new LC_20260427_1391_CheckIfThereIsAValidPathInAGrid().hasValidPath(grid);
+        boolean ans = new LC_27_1391_CheckIfThereIsAValidPathInAGrid().hasValidPath(grid);
         System.out.println(ans);
     }
 }

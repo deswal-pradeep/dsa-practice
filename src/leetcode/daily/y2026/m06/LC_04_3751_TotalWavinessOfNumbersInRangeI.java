@@ -1,6 +1,6 @@
 package leetcode.daily.y2026.m06;
 
-public class LC_20260604_3751_TotalWavinessOfNumbersInRangeI {
+public class LC_04_3751_TotalWavinessOfNumbersInRangeI {
     public int totalWaviness(int num1, int num2) {
         int total = 0;
         for (int i = num1; i <= num2; i++) {
@@ -27,7 +27,7 @@ public class LC_20260604_3751_TotalWavinessOfNumbersInRangeI {
     }
 
     static void main() {
-        int ans = new LC_20260604_3751_TotalWavinessOfNumbersInRangeI().totalWaviness(120, 130);
+        int ans = new LC_04_3751_TotalWavinessOfNumbersInRangeI().totalWaviness(120, 130);
         System.out.println(ans);
     }
 }

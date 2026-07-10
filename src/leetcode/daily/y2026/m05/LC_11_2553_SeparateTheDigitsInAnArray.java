@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Stack;
 
 //https://leetcode.com/problems/separate-the-digits-in-an-array/?envType=daily-question&envId=2026-05-11
-public class LC_20260511_2553_SeparateTheDigitsInAnArray {
+public class LC_11_2553_SeparateTheDigitsInAnArray {
     public int[] separateDigits(int[] nums) {
         List<Integer> list = new ArrayList<>();
         for(int num : nums){
@@ -28,7 +28,7 @@ public class LC_20260511_2553_SeparateTheDigitsInAnArray {
     }
 
     static void main() {
-        int[] ans = new LC_20260511_2553_SeparateTheDigitsInAnArray()
+        int[] ans = new LC_11_2553_SeparateTheDigitsInAnArray()
                 .separateDigits(new int[]{13, 25, 83, 77});
         System.out.println(Arrays.toString(ans));
     }

@@ -1,6 +1,6 @@
 package leetcode.daily.y2026.m05;
 
-public class LC_20260505_61_RotateList {
+public class LC_05_61_RotateList {
     private static class ListNode {
         int val;
         ListNode next;
@@ -42,7 +42,7 @@ public class LC_20260505_61_RotateList {
         n3.next = n4;
         n4.next = n5;
 
-        LC_20260505_61_RotateList caller = new LC_20260505_61_RotateList();
+        LC_05_61_RotateList caller = new LC_05_61_RotateList();
         ListNode headAns = caller.rotateRight(head, 2);
         caller.print(headAns);
     }

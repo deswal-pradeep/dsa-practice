@@ -1,6 +1,6 @@
 package leetcode.daily.y2026.m05;
 
-public class LC_20260501_396_RotateFunction {
+public class LC_01_396_RotateFunction {
     int n;
     public int maxRotateFunction(int[] nums) {
         int f = 0;
@@ -46,7 +46,7 @@ public class LC_20260501_396_RotateFunction {
     }
 
     static void main() {
-        int ans = new LC_20260501_396_RotateFunction().maxRotateFunction(new int[]{-8, 5, -10, -5, -7, -2, -7, 0});
+        int ans = new LC_01_396_RotateFunction().maxRotateFunction(new int[]{-8, 5, -10, -5, -7, -2, -7, 0});
         System.out.println(ans);
     }
 }

@@ -1,7 +1,7 @@
 package leetcode.daily.y2026.m06;
 
 //https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/description/?envType=daily-question&envId=2026-06-15
-public class LC_20260615_2095_DeleteTheMiddleNodeOfALinkedList {
+public class LC_15_2095_DeleteTheMiddleNodeOfALinkedList {
     private static class ListNode {
         int val;
         ListNode next;
@@ -44,7 +44,7 @@ public class LC_20260615_2095_DeleteTheMiddleNodeOfALinkedList {
         node5.next = node6;
         node6.next = node7;
 
-        ListNode newHead = new LC_20260615_2095_DeleteTheMiddleNodeOfALinkedList()
+        ListNode newHead = new LC_15_2095_DeleteTheMiddleNodeOfALinkedList()
                 .deleteMiddle(node1);
         ListNode ptr = newHead;
         StringBuilder builder = new StringBuilder("[");

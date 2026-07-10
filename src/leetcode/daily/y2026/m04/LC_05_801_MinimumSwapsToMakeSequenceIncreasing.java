@@ -1,6 +1,6 @@
 package leetcode.daily.y2026.m04;
 
-public class LC_20260405_801_MinimumSwapsToMakeSequenceIncreasing {
+public class LC_05_801_MinimumSwapsToMakeSequenceIncreasing {
     int n;
 
     public int minSwap(int[] nums1, int[] nums2) {
@@ -35,7 +35,7 @@ public class LC_20260405_801_MinimumSwapsToMakeSequenceIncreasing {
     static void main() {
         int[] nums1 = {2,3,2,5,6};
         int[] nums2 = {0,1,4,4,5};
-        int ans = new LC_20260405_801_MinimumSwapsToMakeSequenceIncreasing().minSwap(nums1, nums2);
+        int ans = new LC_05_801_MinimumSwapsToMakeSequenceIncreasing().minSwap(nums1, nums2);
         System.out.println(ans);
     }
 

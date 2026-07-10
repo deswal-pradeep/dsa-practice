@@ -1,9 +1,9 @@
 package leetcode.daily.y2026.m04;
 
-class LC_20260405_657_RobotReturnToOrigin {
+class LC_05_657_RobotReturnToOrigin {
     static void main() {
-        System.out.println(new LC_20260405_657_RobotReturnToOrigin().judgeCircle("UD"));
-        System.out.println(new LC_20260405_657_RobotReturnToOrigin().judgeCircle("LL"));
+        System.out.println(new LC_05_657_RobotReturnToOrigin().judgeCircle("UD"));
+        System.out.println(new LC_05_657_RobotReturnToOrigin().judgeCircle("LL"));
     }
     public boolean judgeCircle(String moves) {
         int[] counter = new int[2];

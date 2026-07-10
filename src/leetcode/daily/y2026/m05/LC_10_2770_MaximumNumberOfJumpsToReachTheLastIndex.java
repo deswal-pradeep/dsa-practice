@@ -1,7 +1,7 @@
 package leetcode.daily.y2026.m05;
 
 //https://leetcode.com/problems/maximum-number-of-jumps-to-reach-the-last-index/?envType=daily-question&envId=2026-05-10
-public class LC_20260510_2770_MaximumNumberOfJumpsToReachTheLastIndex {
+public class LC_10_2770_MaximumNumberOfJumpsToReachTheLastIndex {
     int n;
     public int maximumJumps(int[] nums, int target) {
         n = nums.length;
@@ -31,7 +31,7 @@ public class LC_20260510_2770_MaximumNumberOfJumpsToReachTheLastIndex {
     }
 
     static void main() {
-        int ans = new LC_20260510_2770_MaximumNumberOfJumpsToReachTheLastIndex().maximumJumps(
+        int ans = new LC_10_2770_MaximumNumberOfJumpsToReachTheLastIndex().maximumJumps(
                 new int[]{1,3,6,4,1,2}, 2);
         System.out.println(ans);
     }

@@ -1,9 +1,9 @@
 package leetcode.daily.y2026.m04;
 
-public class LC_20260415_2515_ShortestDistanceToTargetStringInACircularArray {
+public class LC_15_2515_ShortestDistanceToTargetStringInACircularArray {
     //https://leetcode.com/problems/shortest-distance-to-target-string-in-a-circular-array/?envType=daily-question&envId=2026-04-15
     static void main() {
-        new LC_20260415_2515_ShortestDistanceToTargetStringInACircularArray()
+        new LC_15_2515_ShortestDistanceToTargetStringInACircularArray()
                 .closestTarget(new String[]{"hello","i","am","leetcode","hello"}, "hello", 1);
     }
     public int closestTarget(String[] words, String target, int startIndex) {

@@ -1,6 +1,6 @@
 package leetcode.daily.y2026.m06;
 
-public class LC_20260621_1833_MaximumIceCreamBars {
+public class LC_21_1833_MaximumIceCreamBars {
     public int maxIceCream(int[] costs, int coins) {
         int max = 0;
         for(int cost : costs)
@@ -31,7 +31,7 @@ public class LC_20260621_1833_MaximumIceCreamBars {
     }
 
     static void main() {
-        int ans = new LC_20260621_1833_MaximumIceCreamBars()
+        int ans = new LC_21_1833_MaximumIceCreamBars()
                 .maxIceCream(new int[]{1, 3, 2, 4, 1}, 7);
         System.out.println(ans);
     }

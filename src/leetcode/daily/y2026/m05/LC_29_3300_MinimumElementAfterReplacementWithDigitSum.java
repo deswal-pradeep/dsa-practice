@@ -1,6 +1,6 @@
 package leetcode.daily.y2026.m05;
 
-public class LC_20260529_3300_MinimumElementAfterReplacementWithDigitSum {
+public class LC_29_3300_MinimumElementAfterReplacementWithDigitSum {
     public int minElement(int[] nums) {
         int mini = (int)1e9;
         for(int num : nums){
@@ -19,7 +19,7 @@ public class LC_20260529_3300_MinimumElementAfterReplacementWithDigitSum {
     }
 
     static void main() {
-        int ans = new LC_20260529_3300_MinimumElementAfterReplacementWithDigitSum()
+        int ans = new LC_29_3300_MinimumElementAfterReplacementWithDigitSum()
                 .minElement(new int[]{10, 12, 13, 14});
         System.out.println(ans);
     }

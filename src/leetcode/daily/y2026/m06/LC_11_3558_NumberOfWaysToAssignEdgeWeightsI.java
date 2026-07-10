@@ -3,7 +3,7 @@ package leetcode.daily.y2026.m06;
 import java.util.LinkedList;
 import java.util.List;
 
-public class LC_20260611_3558_NumberOfWaysToAssignEdgeWeightsI {
+public class LC_11_3558_NumberOfWaysToAssignEdgeWeightsI {
 
     int MOD = 1000000007;
 
@@ -49,7 +49,7 @@ public class LC_20260611_3558_NumberOfWaysToAssignEdgeWeightsI {
     static void main() {
         //int[][] edges = new int[][]{{1,2},{1,3},{3,4},{3,5}};
         int[][] edges = new int[][]{{3,2},{2,1}};
-        int ans = new LC_20260611_3558_NumberOfWaysToAssignEdgeWeightsI()
+        int ans = new LC_11_3558_NumberOfWaysToAssignEdgeWeightsI()
                 .assignEdgeWeights(edges);
         System.out.println(ans);
     }

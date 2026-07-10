@@ -1,7 +1,7 @@
 package leetcode.daily.y2026.m05;
 
 //https://leetcode.com/problems/search-in-rotated-sorted-array/?envType=daily-question&envId=2026-05-22
-public class LC_20260522_33_SearchInRotatedSortedArray {
+public class LC_22_33_SearchInRotatedSortedArray {
     public int search(int[] nums, int target) {
         int left = 0;
         int right = nums.length-1;
@@ -33,7 +33,7 @@ public class LC_20260522_33_SearchInRotatedSortedArray {
     }
 
     static void main() {
-        int search = new LC_20260522_33_SearchInRotatedSortedArray()
+        int search = new LC_22_33_SearchInRotatedSortedArray()
                 .search(new int[]{3, 1}, 1);
         System.out.println(search);
     }

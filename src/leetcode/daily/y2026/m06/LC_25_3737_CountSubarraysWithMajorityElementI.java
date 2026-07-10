@@ -1,6 +1,6 @@
 package leetcode.daily.y2026.m06;
 
-public class LC_20260625_3737_CountSubarraysWithMajorityElementI {
+public class LC_25_3737_CountSubarraysWithMajorityElementI {
     public int countMajoritySubarrays(int[] nums, int target) {
         int n = nums.length;
         int[] f = new int[n];
@@ -25,7 +25,7 @@ public class LC_20260625_3737_CountSubarraysWithMajorityElementI {
     }
 
     static void main() {
-        int ans = new LC_20260625_3737_CountSubarraysWithMajorityElementI()
+        int ans = new LC_25_3737_CountSubarraysWithMajorityElementI()
                 .countMajoritySubarrays(new int[]{1, 7, 8, 2}, 5);
         System.out.println(ans);
     }

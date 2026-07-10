@@ -1,7 +1,7 @@
 package leetcode.daily.y2026.m05;
 
 //https://leetcode.com/problems/check-if-array-is-good/?envType=daily-question&envId=2026-05-14
-public class LC_20260514_2784_CheckIfArrayIsGood {
+public class LC_14_2784_CheckIfArrayIsGood {
     public boolean isGood(int[] nums) {
         int max = nums[0];
         int n = nums.length;
@@ -21,7 +21,7 @@ public class LC_20260514_2784_CheckIfArrayIsGood {
     }
 
     static void main() {
-        boolean ans = new LC_20260514_2784_CheckIfArrayIsGood()
+        boolean ans = new LC_14_2784_CheckIfArrayIsGood()
                 .isGood(new int[]{3, 4, 4, 1, 2, 1});
         System.out.println(ans);
     }

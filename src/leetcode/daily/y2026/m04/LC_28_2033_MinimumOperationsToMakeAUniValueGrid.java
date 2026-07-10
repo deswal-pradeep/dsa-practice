@@ -3,7 +3,7 @@ package leetcode.daily.y2026.m04;
 import java.util.Arrays;
 
 //https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid/description/?envType=daily-question&envId=2026-04-28
-public class LC_20260428_2033_MinimumOperationsToMakeAUniValueGrid {
+public class LC_28_2033_MinimumOperationsToMakeAUniValueGrid {
     int m, n;
     public int minOperations(int[][] grid, int x){
         m = grid.length;
@@ -95,7 +95,7 @@ public class LC_20260428_2033_MinimumOperationsToMakeAUniValueGrid {
 
     static void main() {
         int[][] grid = {{2, 4}, {6, 8}};
-        int ans = new LC_20260428_2033_MinimumOperationsToMakeAUniValueGrid().minOperations(grid, 2);
+        int ans = new LC_28_2033_MinimumOperationsToMakeAUniValueGrid().minOperations(grid, 2);
         System.out.println(ans);
     }
 }

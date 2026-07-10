@@ -1,7 +1,7 @@
 package leetcode.daily.y2026.m05;
 
 //https://leetcode.com/problems/count-the-number-of-special-characters-i/description/?envType=daily-question&envId=2026-05-26
-public class LC_20260526_3120_CountTheNumberOfSpecialCharactersI {
+public class LC_26_3120_CountTheNumberOfSpecialCharactersI {
     public int numberOfSpecialChars(String word) {
         char[] arr = word.toCharArray();
         int[] sMap = new int[26];
@@ -23,7 +23,7 @@ public class LC_20260526_3120_CountTheNumberOfSpecialCharactersI {
     }
 
     static void main() {
-        int ans = new LC_20260526_3120_CountTheNumberOfSpecialCharactersI()
+        int ans = new LC_26_3120_CountTheNumberOfSpecialCharactersI()
                 .numberOfSpecialChars("aaAAbcBC");
         System.out.println(ans);
     }

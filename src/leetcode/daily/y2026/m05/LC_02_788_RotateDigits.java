@@ -1,6 +1,6 @@
 package leetcode.daily.y2026.m05;
 
-public class LC_20260502_788_RotateDigits {
+public class LC_02_788_RotateDigits {
     public int rotatedDigits(int n) {
         int[] dp = new int[n + 1];
         int count = 0;
@@ -61,7 +61,7 @@ public class LC_20260502_788_RotateDigits {
     }
 
     static void main() {
-        int ans = new LC_20260502_788_RotateDigits().rotatedDigits(10);
+        int ans = new LC_02_788_RotateDigits().rotatedDigits(10);
         System.out.println(ans);
     }
 }

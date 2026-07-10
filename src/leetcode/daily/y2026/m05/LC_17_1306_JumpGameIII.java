@@ -1,7 +1,7 @@
 package leetcode.daily.y2026.m05;
 
 //https://leetcode.com/problems/jump-game-iii/?envType=daily-question&envId=2026-05-17
-public class LC_20260517_1306_JumpGameIII {
+public class LC_17_1306_JumpGameIII {
     public boolean canReach(int[] arr, int start) {
         boolean[] visited = new boolean[arr.length];
         return dfs(arr, start, visited);
@@ -27,7 +27,7 @@ public class LC_20260517_1306_JumpGameIII {
     }
 
     static void main() {
-        boolean result = new LC_20260517_1306_JumpGameIII()
+        boolean result = new LC_17_1306_JumpGameIII()
                 .canReach(new int[]{4, 2, 3, 0, 3, 1, 2}, 5);
         System.out.println(result);
     }

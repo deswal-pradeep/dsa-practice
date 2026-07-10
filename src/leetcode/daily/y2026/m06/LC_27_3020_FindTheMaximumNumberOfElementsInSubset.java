@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-public class LC_20260627_3020_FindTheMaximumNumberOfElementsInSubset {
+public class LC_27_3020_FindTheMaximumNumberOfElementsInSubset {
     public int maximumLength(int[] nums) {
         Map<Integer, Integer> f = new HashMap<>();
         for(int i = 0; i < nums.length; i++)
@@ -72,7 +72,7 @@ public class LC_20260627_3020_FindTheMaximumNumberOfElementsInSubset {
     }
 
     static void main() {
-        int ans = new LC_20260627_3020_FindTheMaximumNumberOfElementsInSubset()
+        int ans = new LC_27_3020_FindTheMaximumNumberOfElementsInSubset()
                 .maximumLength(new int[]{5, 4});
         System.out.println(ans);
     }

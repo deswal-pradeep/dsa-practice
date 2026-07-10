@@ -5,10 +5,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class LC_20260423_SumOfDistances {
+public class LC_23_SumOfDistances {
     //https://leetcode.com/problems/sum-of-distances/?envType=daily-question&envId=2026-04-23
     static void main() {
-        new LC_20260423_SumOfDistances().distanceEditorial(new int[]{100, 100, 100});
+        new LC_23_SumOfDistances().distanceEditorial(new int[]{100, 100, 100});
     }
     public long[] distanceEditorial(int[] nums) {
         int n = nums.length;

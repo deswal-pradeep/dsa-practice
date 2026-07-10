@@ -1,7 +1,7 @@
 package leetcode.daily.y2026.m05;
 
 //https://leetcode.com/problems/jump-game-vii/?envType=daily-question&envId=2026-05-25
-public class LC_20260525_1871_JumpGameVII {
+public class LC_25_1871_JumpGameVII {
     int n;
     public boolean canReach(String s, int minJump, int maxJump) {
         char[] arr = s.toCharArray();
@@ -52,7 +52,7 @@ public class LC_20260525_1871_JumpGameVII {
         for(int i = 0; i < 100000; i++)
                 builder.append("0");
 
-        boolean ans = new LC_20260525_1871_JumpGameVII()
+        boolean ans = new LC_25_1871_JumpGameVII()
                 .canReach("0111111111111111111111111111111101111101111111111111111110",
                         5, 26);
         System.out.println(ans);

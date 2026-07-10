@@ -1,9 +1,9 @@
 package leetcode.daily.y2026.m05;
 
 //https://leetcode.com/problems/rotated-digits/description/
-public class LC_20260503_788_RotatedString {
+public class LC_03_788_RotatedString {
     static void main() {
-        boolean ans = new LC_20260503_788_RotatedString().rotateString("abcde", "bcdea");
+        boolean ans = new LC_03_788_RotatedString().rotateString("abcde", "bcdea");
         System.out.println(ans);
     }
 

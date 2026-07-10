@@ -2,7 +2,7 @@ package leetcode.daily.y2026.m06;
 
 import java.util.PriorityQueue;
 
-public class LC_20260610_3691_MaximumTotalSubarrayValueII {
+public class LC_10_3691_MaximumTotalSubarrayValueII {
     static class SparseTree {
         int[][] sparse;
         int type;
@@ -73,7 +73,7 @@ public class LC_20260610_3691_MaximumTotalSubarrayValueII {
         return ans;
     }
     static void main() {
-        long ans = new LC_20260610_3691_MaximumTotalSubarrayValueII()
+        long ans = new LC_10_3691_MaximumTotalSubarrayValueII()
                 .maxTotalValue(new int[]{4, 2, 5, 1}, 3);
         System.out.println(ans);
     }

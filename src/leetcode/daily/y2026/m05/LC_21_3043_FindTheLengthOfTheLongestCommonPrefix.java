@@ -3,7 +3,7 @@ package leetcode.daily.y2026.m05;
 import java.util.Arrays;
 
 //https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/description/?envType=daily-question&envId=2026-05-21
-public class LC_20260521_3043_FindTheLengthOfTheLongestCommonPrefix {
+public class LC_21_3043_FindTheLengthOfTheLongestCommonPrefix {
     static class TrieNode {
         TrieNode[] children = new TrieNode[10];
         boolean isEnd = false;
@@ -81,7 +81,7 @@ public class LC_20260521_3043_FindTheLengthOfTheLongestCommonPrefix {
     }
 
     static void main() {
-        int ans = new LC_20260521_3043_FindTheLengthOfTheLongestCommonPrefix()
+        int ans = new LC_21_3043_FindTheLengthOfTheLongestCommonPrefix()
                 .longestCommonPrefix(
                         new int[]{1,10,100},
                         new int[]{1000});

@@ -1,7 +1,7 @@
 package leetcode.daily.y2026.m06;
 
 //https://leetcode.com/problems/find-the-highest-altitude/?envType=daily-question&envId=2026-06-19
-public class LC_20260619_1732_FindTheHighestAltitude {
+public class LC_19_1732_FindTheHighestAltitude {
     public int largestAltitude(int[] gain) {
         int alt = 0;
         int maxi = 0;
@@ -13,7 +13,7 @@ public class LC_20260619_1732_FindTheHighestAltitude {
     }
 
     static void main() {
-        int ans = new LC_20260619_1732_FindTheHighestAltitude()
+        int ans = new LC_19_1732_FindTheHighestAltitude()
                 .largestAltitude(new int[]{-4, -3, -2, -1, 4, 3, 2});
         System.out.println(ans);
     }

@@ -1,6 +1,6 @@
 package leetcode.daily.y2026.m06;
 
-public class LC_20260616_3612_ProcessStringWithSpecialOperationsI {
+public class LC_16_3612_ProcessStringWithSpecialOperationsI {
     public String processStr(String s) {
         char[] arr = s.toCharArray();
         StringBuilder builder = new StringBuilder();
@@ -20,7 +20,7 @@ public class LC_20260616_3612_ProcessStringWithSpecialOperationsI {
     }
 
     static void main() {
-        String ans = new LC_20260616_3612_ProcessStringWithSpecialOperationsI()
+        String ans = new LC_16_3612_ProcessStringWithSpecialOperationsI()
                 .processStr("a#b%*");
         System.out.println(ans);
     }

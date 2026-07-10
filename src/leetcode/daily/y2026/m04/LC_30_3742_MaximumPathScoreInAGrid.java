@@ -3,7 +3,7 @@ package leetcode.daily.y2026.m04;
 import java.util.Arrays;
 
 //https://leetcode.com/problems/maximum-path-score-in-a-grid/?envType=daily-question&envId=2026-04-30
-public class LC_20260430_3742_MaximumPathScoreInAGrid {
+public class LC_30_3742_MaximumPathScoreInAGrid {
     int m, n;
     int INT_MAX = (int)-1e9+7;
     public int maxPathScore(int[][] grid, int k) {
@@ -45,7 +45,7 @@ public class LC_20260430_3742_MaximumPathScoreInAGrid {
 
     static void main() {
         int[][] grid = {{0, 1, 0, 1, 0, 0, 2, 0}};
-        int ans = new LC_20260430_3742_MaximumPathScoreInAGrid().maxPathScore(grid, 88);
+        int ans = new LC_30_3742_MaximumPathScoreInAGrid().maxPathScore(grid, 88);
         System.out.println(ans);
     }
 }

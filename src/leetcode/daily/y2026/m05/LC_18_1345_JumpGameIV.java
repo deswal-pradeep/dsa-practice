@@ -2,7 +2,7 @@ package leetcode.daily.y2026.m05;
 
 import java.util.*;
 
-public class LC_20260518_1345_JumpGameIV {
+public class LC_18_1345_JumpGameIV {
     public int minJumps(int[] arr) {
         Map<Integer, List<Integer>> map = new HashMap<>();
         for(int i = 0; i < arr.length; i++){
@@ -41,7 +41,7 @@ public class LC_20260518_1345_JumpGameIV {
     }
 
     static void main() {
-        int ans = new LC_20260518_1345_JumpGameIV()
+        int ans = new LC_18_1345_JumpGameIV()
                 .minJumps(new int[]{100,-23,-23,404,100,23,23,23,3,404});
         System.out.println(ans);
     }

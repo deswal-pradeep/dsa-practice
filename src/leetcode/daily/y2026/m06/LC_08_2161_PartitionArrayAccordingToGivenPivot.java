@@ -2,7 +2,7 @@ package leetcode.daily.y2026.m06;
 
 import java.util.Arrays;
 
-public class LC_20260608_2161_PartitionArrayAccordingToGivenPivot {
+public class LC_08_2161_PartitionArrayAccordingToGivenPivot {
     public int[] pivotArray_1(int[] nums, int pivot) {
         int[] ans = new int[nums.length];
         int lessI = 0;
@@ -49,7 +49,7 @@ public class LC_20260608_2161_PartitionArrayAccordingToGivenPivot {
     }
 
     static void main() {
-        int[] ans = new LC_20260608_2161_PartitionArrayAccordingToGivenPivot()
+        int[] ans = new LC_08_2161_PartitionArrayAccordingToGivenPivot()
                 .pivotArray(new int[]{9, 12, 5, 10, 14, 3, 10}, 10);
         System.out.println(Arrays.toString(ans));
     }

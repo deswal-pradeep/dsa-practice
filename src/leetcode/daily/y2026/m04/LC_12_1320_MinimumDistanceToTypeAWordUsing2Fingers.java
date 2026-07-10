@@ -2,9 +2,9 @@ package leetcode.daily.y2026.m04;
 
 import java.util.Arrays;
 
-public class LC_20260412_1320_MinimumDistanceToTypeAWordUsing2Fingers {
+public class LC_12_1320_MinimumDistanceToTypeAWordUsing2Fingers {
     static void main() {
-        System.out.println(new LC_20260412_1320_MinimumDistanceToTypeAWordUsing2Fingers().minimumDistance("CAKE"));
+        System.out.println(new LC_12_1320_MinimumDistanceToTypeAWordUsing2Fingers().minimumDistance("CAKE"));
     }
     int n;
     public int minimumDistance(String word) {

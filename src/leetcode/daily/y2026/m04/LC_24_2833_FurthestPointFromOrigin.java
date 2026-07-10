@@ -1,7 +1,7 @@
 package leetcode.daily.y2026.m04;
 
 //https://leetcode.com/problems/furthest-point-from-origin/?envType=daily-question&envId=2026-04-24
-public class LC_20260424_2833_FurthestPointFromOrigin {
+public class LC_24_2833_FurthestPointFromOrigin {
     int n;
     public int furthestDistanceFromOrigin(String moves) {
         n = moves.length();
@@ -21,6 +21,6 @@ public class LC_20260424_2833_FurthestPointFromOrigin {
     }
 
     static void main() {
-        System.out.println(new LC_20260424_2833_FurthestPointFromOrigin().furthestDistanceFromOrigin("_R__LL_"));
+        System.out.println(new LC_24_2833_FurthestPointFromOrigin().furthestDistanceFromOrigin("_R__LL_"));
     }
 }

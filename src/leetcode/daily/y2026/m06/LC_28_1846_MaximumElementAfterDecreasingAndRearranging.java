@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class LC_20260628_1846_MaximumElementAfterDecreasingAndRearranging {
+public class LC_28_1846_MaximumElementAfterDecreasingAndRearranging {
     public int maximumElementAfterDecrementingAndRearranging(int[] arr) {
         int n = arr.length;
         int[] counts = new int[n + 1];
@@ -69,7 +69,7 @@ public class LC_20260628_1846_MaximumElementAfterDecreasingAndRearranging {
 
     static void main() {
         int[] arr = new int[]{63,94,4,61,6,40};
-        int ans = new LC_20260628_1846_MaximumElementAfterDecreasingAndRearranging()
+        int ans = new LC_28_1846_MaximumElementAfterDecreasingAndRearranging()
                 .maximumElementAfterDecrementingAndRearranging(arr);
         System.out.println(ans);
     }

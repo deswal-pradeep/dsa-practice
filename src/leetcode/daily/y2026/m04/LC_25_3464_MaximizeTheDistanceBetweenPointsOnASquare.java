@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 //https://leetcode.com/problems/maximize-the-distance-between-points-on-a-square/description/?envType=daily-question&envId=2026-04-25
-public class LC_20260425_3464_MaximizeTheDistanceBetweenPointsOnASquare {
+public class LC_25_3464_MaximizeTheDistanceBetweenPointsOnASquare {
     static void main() {
 
     }

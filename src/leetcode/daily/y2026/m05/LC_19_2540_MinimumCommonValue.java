@@ -1,7 +1,7 @@
 package leetcode.daily.y2026.m05;
 
 //https://leetcode.com/problems/minimum-common-value/description/?envType=daily-question&envId=2026-05-19
-public class LC_20260519_2540_MinimumCommonValue {
+public class LC_19_2540_MinimumCommonValue {
     public int getCommon(int[] nums1, int[] nums2) {
         int i1 = 0;
         int i2 = 0;
@@ -18,7 +18,7 @@ public class LC_20260519_2540_MinimumCommonValue {
     }
 
     static void main() {
-        int common = new LC_20260519_2540_MinimumCommonValue()
+        int common = new LC_19_2540_MinimumCommonValue()
                 .getCommon(new int[]{1,2,3,6},
                         new int[]{2,3,4,5});
         System.out.println(common);

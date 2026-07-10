@@ -2,10 +2,10 @@ package leetcode.daily.y2026.m04;
 
 import java.util.*;
 
-public class LC_20260416_3488_ClosestEqualElementQueries {
+public class LC_16_3488_ClosestEqualElementQueries {
     //https://leetcode.com/problems/closest-equal-element-queries/?envType=daily-question&envId=2026-04-16
     static void main() {
-        List<Integer> ans = new LC_20260416_3488_ClosestEqualElementQueries().solveQueries(new int[]{1, 3, 1, 4, 1, 3, 2}, new int[]{0, 3, 5});
+        List<Integer> ans = new LC_16_3488_ClosestEqualElementQueries().solveQueries(new int[]{1, 3, 1, 4, 1, 3, 2}, new int[]{0, 3, 5});
         System.out.println(ans);
     }
     public List<Integer> solveQueries(int[] nums, int[] queries) {

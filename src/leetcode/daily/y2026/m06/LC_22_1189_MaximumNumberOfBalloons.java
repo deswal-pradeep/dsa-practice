@@ -1,6 +1,6 @@
 package leetcode.daily.y2026.m06;
 
-public class LC_20260622_1189_MaximumNumberOfBalloons {
+public class LC_22_1189_MaximumNumberOfBalloons {
     public int maxNumberOfBalloons(String text) {
         int[] f = new int[26];
         for(char c : text.toCharArray()){
@@ -14,7 +14,7 @@ public class LC_20260622_1189_MaximumNumberOfBalloons {
     }
 
     static void main() {
-        int ans = new LC_20260622_1189_MaximumNumberOfBalloons()
+        int ans = new LC_22_1189_MaximumNumberOfBalloons()
                 .maxNumberOfBalloons("loonbalxballpoon");
         System.out.println(ans);
     }

@@ -3,7 +3,7 @@ package leetcode.daily.y2026.m06;
 import java.util.HashMap;
 import java.util.Map;
 
-public class LC_20260607_2196_CreateBinaryTreeFromDescriptions {
+public class LC_07_2196_CreateBinaryTreeFromDescriptions {
     public class TreeNode {
         int val;
         TreeNode left;
@@ -55,7 +55,7 @@ public class LC_20260607_2196_CreateBinaryTreeFromDescriptions {
 
     static void main() {
         int[][] arr = new int[][]{{20,15,1}, {20,17,0}, {50,20,1}, {50,80,0}, {80,19,1}};
-        TreeNode ans = new LC_20260607_2196_CreateBinaryTreeFromDescriptions()
+        TreeNode ans = new LC_07_2196_CreateBinaryTreeFromDescriptions()
                 .createBinaryTree(arr);
         System.out.println(ans);
     }

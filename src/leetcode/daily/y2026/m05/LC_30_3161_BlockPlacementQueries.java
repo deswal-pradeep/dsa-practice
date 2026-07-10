@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.TreeSet;
 
 //https://leetcode.com/problems/block-placement-queries/description/?envType=daily-question&envId=2026-05-30
-public class LC_20260530_3161_BlockPlacementQueries {
+public class LC_30_3161_BlockPlacementQueries {
     private static class SegmentTree{
         int[] a;
         int[] tree;
@@ -103,7 +103,7 @@ public class LC_20260530_3161_BlockPlacementQueries {
         //int[][] queries = new int[][]{{1,2},{2,3,3},{2,3,1},{2,2,2}};
         //int[][] queries = new int[][]{{1,2},{1,30},{1,28},{1,46},{1,11},{1,23},{1,37},{1,130},{1,128},{1,13},{1,102},{1,105},{1,7},{1,144},{1,50},{1,142},{1,55},{2,109,46}};
         int[][] queries = new int[][]{{1,2}, {1,30}, {2,123,118}, {2,160,118}};
-        List<Boolean> results = new LC_20260530_3161_BlockPlacementQueries()
+        List<Boolean> results = new LC_30_3161_BlockPlacementQueries()
                 .getResults(queries);
         System.out.println(results);
     }
