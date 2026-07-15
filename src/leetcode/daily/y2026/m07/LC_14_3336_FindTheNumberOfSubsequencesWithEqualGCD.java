@@ -8,6 +8,7 @@ public class LC_14_3336_FindTheNumberOfSubsequencesWithEqualGCD {
     static int MOD = 1_000_000_007;
     int n;
 
+    //push based dp
     public int subsequencePairCount(int[] nums) {
         n = nums.length;
         int max = Arrays.stream(nums).max().getAsInt();
@@ -36,6 +37,7 @@ public class LC_14_3336_FindTheNumberOfSubsequencesWithEqualGCD {
         return ans;
     }
 
+    //pull based dp
     public int subsequencePairCount_downward(int[] nums) {
         n = nums.length;
         int max = Arrays.stream(nums).max().getAsInt();
@@ -88,6 +90,7 @@ public class LC_14_3336_FindTheNumberOfSubsequencesWithEqualGCD {
         return dp[0][0][0];
     }
 
+    //memoization
     public int subsequencePairCount_mem(int[] nums) {
         n = nums.length;
         int max = Arrays.stream(nums).max().getAsInt();
