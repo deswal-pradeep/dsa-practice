@@ -164,8 +164,8 @@ public class LC_22_3501_MaximizeActiveSectionWithTradeII {
 
     static void main() {
         List<Integer> integers = new LC_22_3501_MaximizeActiveSectionWithTradeII()
-                .maxActiveSectionsAfterTrade("1000100",
-                        new int[][]{{1, 5}, {0, 6}, {0, 4}});
+                .maxActiveSectionsAfterTrade("00000110001000001100",
+                        new int[][]{{4,12}});
         System.out.println(integers);
     }
 }

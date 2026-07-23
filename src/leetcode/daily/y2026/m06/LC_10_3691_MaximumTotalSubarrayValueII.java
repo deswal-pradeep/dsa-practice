@@ -3,17 +3,17 @@ package leetcode.daily.y2026.m06;
 import java.util.PriorityQueue;
 
 public class LC_10_3691_MaximumTotalSubarrayValueII {
-    static class SparseTree {
+    static class SparseTable {
         int[][] sparse;
         int type;
-        public SparseTree(int[] arr, int type){
+        public SparseTable(int[] arr, int type){
             this.type = type;
             buildTree(arr, type);
         }
 
         private void buildTree(int[] arr, int type) {
             int n = arr.length;
-            int k = (int)(Math.log(n)/Math.log(2));
+            int k = 31 - Integer.numberOfLeadingZeros(n);
             sparse = new int[k+1][n];
             sparse[0] = arr;
 
@@ -30,7 +30,7 @@ public class LC_10_3691_MaximumTotalSubarrayValueII {
 
         int query(int l, int r){
             int count = r - l + 1;
-            int k = (int)(Math.log(count)/Math.log(2));
+            int k = 31 - Integer.numberOfLeadingZeros(count);
             int ans = 0;
             if(type == 0){
                 ans = Math.min(sparse[k][l], sparse[k][r-(1<<k)+1]);
@@ -41,8 +41,8 @@ public class LC_10_3691_MaximumTotalSubarrayValueII {
         }
     }
     public long maxTotalValue(int[] nums, int k) {
-        SparseTree minTree = new SparseTree(nums, 0);
-        SparseTree maxTree = new SparseTree(nums, 1);
+        SparseTable minTree = new SparseTable(nums, 0);
+        SparseTable maxTree = new SparseTable(nums, 1);
         int n = nums.length;
         PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> b[0] - a[0]);
         for (int l = 0; l < n; l++) {
