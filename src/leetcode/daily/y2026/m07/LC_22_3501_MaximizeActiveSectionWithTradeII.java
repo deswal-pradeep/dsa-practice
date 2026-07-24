@@ -4,6 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 //https://leetcode.com/problems/maximize-active-section-with-trade-ii/description/?envType=daily-question&envId=2026-07-22
+
+/**
+ * lowerBound(2) and upperBound(2)
+ * 1, 2, 2, 2, 4, 5
+ *    ^        ^
+ *   LB       UB
+ */
 public class LC_22_3501_MaximizeActiveSectionWithTradeII {
     static class SegmentTree {
 
@@ -134,6 +141,25 @@ public class LC_22_3501_MaximizeActiveSectionWithTradeII {
         return ans;
     }
 
+    public int lowerBound_lteWay(List<Integer> list, int target) {
+        int left = 0;
+        int right = list.size() - 1;
+        int ans = list.size();
+
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+
+            if (list.get(mid) >= target) {
+                ans = mid;
+                right = mid - 1;
+            } else {
+                left = mid + 1;
+            }
+        }
+
+        return ans;
+    }
+
     private int lowerBound(List<Integer> list, int target) {
         int left = 0,
                 right = list.size();
@@ -146,6 +172,24 @@ public class LC_22_3501_MaximizeActiveSectionWithTradeII {
             }
         }
         return left;
+    }
+    public int upperBound_lteWay(List<Integer> list, int target) {
+        int left = 0;
+        int right = list.size() - 1;
+        int ans = list.size();
+
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+
+            if (list.get(mid) > target) {
+                ans = mid;
+                right = mid - 1;
+            } else {
+                left = mid + 1;
+            }
+        }
+
+        return ans;
     }
 
     private int upperBound(List<Integer> list, int target) {
