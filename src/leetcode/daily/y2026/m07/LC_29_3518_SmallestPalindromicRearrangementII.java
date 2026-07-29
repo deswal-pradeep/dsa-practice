@@ -3,139 +3,77 @@ package leetcode.daily.y2026.m07;
 import java.util.Arrays;
 
 public class LC_29_3518_SmallestPalindromicRearrangementII {
-    int len;
-    public String smallestPalindrome(String s, int k) {
-        len = s.length();
-        String substring = s.substring(0, len/2);
-        String kthPermute = kthPermutation(substring, k);
-        if(kthPermute.isEmpty() && !substring.isEmpty())
-            return "";
-        StringBuilder ans = new StringBuilder(kthPermute);
-        StringBuilder back = new StringBuilder(kthPermute).reverse();
-        if(len %2 != 0){
-            ans.append(s.charAt(len/2));
-        }
-        ans.append(back);
-        return ans.toString();
-    }
-
-    private String kthPermutation(String s, long k) {
-
-        int[] cnt = new int[26];
-        for (char c : s.toCharArray()) {
-            cnt[c - 'a']++;
-        }
-
-        if (count(cnt, k) < k) {
-            return "";
-        }
-
-        StringBuilder ans = new StringBuilder();
-
-        for (int pos = 0; pos < s.length(); pos++) {
-
-            for (int ch = 0; ch < 26; ch++) {
-
-                if (cnt[ch] == 0) {
-                    continue;
-                }
-
-                cnt[ch]--;
-
-                long ways = count(cnt, k);
-
-                if (ways >= k) {
-                    ans.append((char) ('a' + ch));
-                    break;
-                }
-
-                k -= ways;
-                cnt[ch]++;
-            }
-        }
-
-        return ans.toString();
-    }
-
-    // Counts distinct permutations, capped at limit.
-    private long count(int[] freq, long limit) {
-
-        int total = 0;
-        for (int f : freq) {
-            total += f;
-        }
-
-        long ans = 1;
-        int rem = total;
-
-        for (int f : freq) {
-            if (f == 0) continue;
-
-            ans = multiplyCap(ans, nCrCap(rem, f, limit), limit);
-            if (ans >= limit) {
-                return limit;
-            }
-            rem -= f;
-        }
-
-        return ans;
-    }
-    private long nCrCap(int n, int r, long limit) {
-
-        r = Math.min(r, n - r);
-
+    private long comb(long n, long m, long k) {
         long res = 1;
+        m = Math.min(m, n - m);
 
-        for (int i = 1; i <= r; i++) {
-
-            long num = n - r + i;
-            long den = i;
-
-            long g = gcd(num, den);
-            num /= g;
-            den /= g;
-
-            g = gcd(res, den);
-            res /= g;
-            den /= g;
-
-            if (res > limit / num) {
-                return limit;
-            }
-
-            res *= num;
-            res /= den;
-
-            if (res >= limit) {
-                return limit;
+        for (long i = 1; i <= m; i++) {
+            res = (res * (n - i + 1)) / i;
+            if (res > k) {
+                return k + 1;
             }
         }
-
         return res;
     }
 
-    private long gcd(long a, long b) {
-        while (b != 0) {
-            long t = a % b;
-            a = b;
-            b = t;
+    private long permutations(int rem, int[] bucket, long k) {
+        long ways = 1;
+        for (int i = 0; i < 26; i++) {
+            if (bucket[i] == 0) {
+                continue;
+            }
+
+            ways *= comb(rem, bucket[i], k);
+            if (ways > k) {
+                break;
+            }
+            rem -= bucket[i];
         }
-        return a;
+        return ways;
     }
 
-    private long multiplyCap(long a, long b, long cap) {
-        if (a == 0 || b == 0) return 0;
-        if (a > cap / b) return cap;
-        return a * b;
-    }
+    public String smallestPalindrome(String s, long k) {
+        int partition = s.length() / 2;
+        int[] bucket = new int[26];
 
-    static void main() {
-        //String ans = new LC_29_3518_SmallestPalindromicRearrangementII().smallestPalindrome("axcyzzxzzycxa", 18);
-        String ans = new LC_29_3518_SmallestPalindromicRearrangementII()
-                .smallestPalindrome("legbxfuoquyhtgoxabyguyrggkqgwxpdbwitguothurajgzwnfkxfsxwharovnunuygjvewlikrmfiymolsftsklhyheagyveusdnmexwwxemndsuevygaehyhlkstfslomyifmrkilwevjgyununvorahwxsfxkfnwzgjaruhtougtiwbdpxwgqkggryugybaxogthyuqoufxbgel",
-                        641053);
-        boolean result = "aaaabbbddeeeeefffffgggggggggghhhhhiiijjkkkkllllmmmnnnnooooopqqrrrrssssttttuuuuuuuuvvvwwwwxxxyyyyyxxxwyzywwyzywxxxyyyyyxxxwwwwvvvuuuuuuuuttttssssrrrrqqpooooonnnnmmmllllkkkkjjiiihhhhhggggggggggfffffeeeeeddbbbaaaa".equals(ans);
-        System.out.println(ans);
-        System.out.println(result);
+        for (int i = 0; i < partition; i++) {
+            bucket[s.charAt(i) - 97] += 1;
+        }
+
+        StringBuilder left = new StringBuilder();
+        long startIndex = 1;
+
+        for (int pos = 0; pos < partition; pos++) {
+            for (int i = 0; i < 26; i++) {
+                if (bucket[i] == 0) {
+                    continue;
+                }
+
+                bucket[i] -= 1;
+
+                long ways = permutations(partition - pos - 1, bucket, k);
+                if (startIndex + ways > k) {
+                    left.append((char) (i + 97));
+                    break;
+                }
+
+                bucket[i] += 1;
+                startIndex += ways;
+            }
+        }
+
+        if (left.length() < partition) {
+            return "";
+        }
+
+        if (s.length() % 2 != 0) {
+            left.append(s.charAt(partition));
+        }
+
+        for (int i = partition - 1; i >= 0; i--) {
+            left.append(left.charAt(i));
+        }
+
+        return left.toString();
     }
 }
