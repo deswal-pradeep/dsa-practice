@@ -18,7 +18,8 @@ public class LC_19_1386_CinemaSeatAllocation {
         for (int i = 0; i < A.length; i++) {
             m |= (1 << A[i][1]);
             if (i == A.length - 1 || A[i][0] != A[i + 1][0]) {
-                int c = ((m & 0x3C) == 0 ? 1 : 0) + ((m & 0x3C0) == 0 ? 1 : 0);
+                int c = ((m & 0x3C) == 0 ? 1 : 0)
+                        + ((m & 0x3C0) == 0 ? 1 : 0);
                 if (c == 0 && (m & 0xF0) == 0)
                     c = 1;
                 res -= 2 - c;
