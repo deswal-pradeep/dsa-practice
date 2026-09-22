@@ -11,7 +11,7 @@ public class LC_21_3524_FindXValueOfArrayI {
             dp[i][nums[i-1]%k] = 1;
             for(int j = 0; j < k; j++){
                 int cnt = dp[i-1][j];
-                int newR = (j + nums[i-1])%k;
+                int newR = (int)((1l * nums[i-1] * j)%k);
                 dp[i][newR] += cnt;
             }
         }
