@@ -60,7 +60,7 @@ public class LC_27_1190_ReverseSubstringsBetweenEachPairOfParentheses {
 
     static void main() {
         String s = new LC_27_1190_ReverseSubstringsBetweenEachPairOfParentheses()
-                .reverseParentheses("(ed(et(oc))el)");
+                .reverseParentheses_tunnelWay("(ed(et(oc))el)");
         System.out.println(s);
     }
 }
