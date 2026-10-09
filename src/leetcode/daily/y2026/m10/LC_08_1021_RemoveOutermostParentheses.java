@@ -18,6 +18,6 @@ public class LC_08_1021_RemoveOutermostParentheses {
     }
 
     static void main() {
-        
+
     }
 }
