@@ -1,4 +1,4 @@
-package leetcode.daily.y2026;
+package leetcode.daily.y2026.m11;
 
 import java.util.Arrays;
 
