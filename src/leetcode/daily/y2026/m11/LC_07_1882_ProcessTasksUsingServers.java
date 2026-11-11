@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-public class LCL_07_1882_ProcessTasksUsingServers {
+public class LC_07_1882_ProcessTasksUsingServers {
     public int[] assignTasks(int[] servers, int[] tasks) {
         PriorityQueue<int[]> pool = new PriorityQueue<>((a, b) -> {
             if(a[1] != b[1]) return a[1] - b[1];
@@ -36,7 +36,7 @@ public class LCL_07_1882_ProcessTasksUsingServers {
     }
 
     static void main() {
-        int[] ints = new LCL_07_1882_ProcessTasksUsingServers().assignTasks(new int[]{5,1,4,3,2}, new int[]{2,1,2,4,5,2,1});
+        int[] ints = new LC_07_1882_ProcessTasksUsingServers().assignTasks(new int[]{5,1,4,3,2}, new int[]{2,1,2,4,5,2,1});
         System.out.println(Arrays.toString(ints));
     }
 }
